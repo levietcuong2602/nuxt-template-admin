@@ -6,7 +6,10 @@
       @toggleClick="toggleSideBar"
     />
 
-    <breadcrumb class="breadcrumb-container" />
+    <!-- <breadcrumb class="breadcrumb-container" /> -->
+    <a href="/" class="logo-container">
+      <img src="/img/logo.png" alt="logo" class="logo-brand" />
+    </a>
 
     <div class="right-menu">
       <el-dropdown class="avatar-container" trigger="click">
@@ -86,6 +89,15 @@ export default {
 
   .breadcrumb-container {
     float: left;
+  }
+
+  .logo-container {
+    float: left;
+    .logo-brand {
+      max-width: 100px;
+      padding: 5px 15px 5px 5px;
+      vertical-align: middle;
+    }
   }
 
   .right-menu {

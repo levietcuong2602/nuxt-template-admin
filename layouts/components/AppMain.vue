@@ -1,7 +1,9 @@
 <template>
   <section class="app-main">
     <transition name="fade-transform" mode="out-in">
-      <nuxt />
+      <div class="main-content">
+        <nuxt />
+      </div>
     </transition>
   </section>
 </template>
@@ -27,6 +29,9 @@ export default {
 }
 .fixed-header + .app-main {
   padding-top: 50px;
+}
+.main-content {
+  margin-top: 50px;
 }
 </style>
 

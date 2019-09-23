@@ -46,6 +46,61 @@ export default {
               meta: { title: "Dashboard", icon: "dashboard" }
             }
           ]
+        },
+        {
+          path: "/convert-book",
+          redirect: "/convert-book",
+          children: [
+            {
+              path: "/convert-book",
+              name: "convertBook",
+              meta: { title: "Chuyển sách nói", icon: "convert-book" }
+            }
+          ]
+        },
+        {
+          path: "/analysic-detail",
+          redirect: "/analysic-detail",
+          children: [
+            {
+              path: "/analysic-detail",
+              name: "AnalysicDetail",
+              meta: { title: "Thống kê chi tiết", icon: "analysic-detail" }
+            }
+          ]
+        },
+        {
+          path: "/analysic-book",
+          redirect: "/analysic-book",
+          children: [
+            {
+              path: "/analysic-book",
+              name: "AnalysicBook",
+              meta: { title: "Thống kê sách", icon: "analysic-book" }
+            }
+          ]
+        },
+        {
+          path: "/payment-history",
+          redirect: "/payment-history",
+          children: [
+            {
+              path: "/payment-history",
+              name: "PaymentHistory",
+              meta: { title: "Lịch sử thanh toán", icon: "payment-history" }
+            }
+          ]
+        },
+        {
+          path: "/buy-package",
+          redirect: "/buy-package",
+          children: [
+            {
+              path: "/buy-package",
+              name: "BuyPackage",
+              meta: { title: "Mua gói cước", icon: "buy-package" }
+            }
+          ]
         }
       ];
     },
